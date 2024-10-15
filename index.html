@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Cobrança de Alunos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Sistema de Cobrança de Alunos</h1>
+    <table id="student-table">
+      <thead>
+        <tr>
+          <th>Nome do Aluno</th>
+          <th>Valor a Pagar (KZ)</th>
+          <th>Status</th>
+          <th>Ação</th>
+        </tr>
+      </thead>
+      <tbody id="student-list">
+        <!-- Lista de alunos será gerada dinamicamente -->
+      </tbody>
+    </table>
+    <form id="add-student-form">
+      <h2>Adicionar Aluno</h2>
+      <input type="text" id="student-name" placeholder="Nome do aluno" required>
+      <input type="number" id="student-fee" placeholder="Valor a pagar (KZ)" required>
+      <button type="submit">Adicionar Aluno</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
